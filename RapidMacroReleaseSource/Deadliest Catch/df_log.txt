@@ -1,0 +1,8 @@
+Welcome.
+
+Installing Patches
+Done
+Init Dialog
+Shutting down
+Removing patches
+Done

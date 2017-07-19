@@ -1,0 +1,121 @@
+In order to run these macros you will need to change some settings in Darkfall.
+First off you will need to go to your GUI OPTIONS in Darkfall options and set the
+active/inactive/game mode window opacties all the way to the right (opaque, non transperant).
+Doing this can be easily done by sliding the game mode window slider all the way to the right
+which will in drag the rest of the sliders with it.
+
+Next you will need to set up some of your binding which are already set in the macro.
+The most important binding is the unsheathe key. Go to input bindings then to interaction.
+This is very important... DO NOT CHANGE your >>TOGGLE<< Unsheathe Object
+It will look like this:
+
+Toggle unsheathe object: <--NOT here
+Tigger Current item:
+Unsheate Object: <--Here
+Use:
+
+Now the one you will want to change is the one that only literally says "Unsheathe object".
+Now click it and change it to ctrl+blackslash. Most people get slash and blackslash confused.
+Please re-check the binding so it looks like this:
+
+Unsheate Object: LEFT_CTRL+BACKSLASH
+
+Good job.
+
+Never cover, close, move the hotbar, health bar, or target healthbar when using these macros (target healthbar
+excluded in the magic macro).
+
+
+
+
+
+FOR GROUP SEX!
+==========================================================================================================
+
+Now we need to set up your hotbar. Find an empty hotbar. You will need rank 0 weapons, staffs, food, regs.
+I will order it in the position is should go in.
+1 weapon
+2 staff
+3 food
+4 special attack/rage
+5 mana to stam
+6 disease or arrow ward
+7 melee haste or rapid shot
+8 ironskin
+9 witches brew
+0 heal other or sacrafice
+
+These keys will need to be keys 1 - 0 on your bindings.
+
+Additional Hotkeys:
+
+ctrl + F11 -Extra Food
+ctrl + F12 -Extra Food
+
+Numpad Period - Health to Mana (YOU MUST BIND THIS KEY)
+
+These can be binded to any part of your hotbar using the GUI tab in Input Bindings in darkfall.
+
+For auto equip armor you will need to find yet another free hotbar.
+Open your paperdoll as you look at it, I have the armor set on the hotbar taken from the paperdoll in a
+clockwise fasion. I will take you through this. At the top of your paperdoll (12:00) is your helm..
+so your helm will go into hotbar slot ONE, next (3:00) shoulderpads hotbar slot TWO then down to your
+gloves (slot 5) greaves (slot 7) legs (slot 9) and chest (slot 0). If you dont understand this, delete
+the macro now.
+
+Now becasue the macro will always be on the hotbar that has your staff, weapon and food and will be press by keys
+1-0, we will need to set up additional hotkeys for equipping armor on the fly. Go to Input Bindings then to the GUI
+Tab and find which hotbar you set up your armor on. (If you do not know how to use this function in darkfall
+the macro will not work for you... try to find some help or delete the macro.) When you find the correct hotbar slot
+in GUI bind them like this:
+slot 0 ctrl F10
+slot 1 ctrl F1
+slot 2 ctrl F2
+all the way to -
+slot 9 ctrl F9
+
+Now you are ready to run the macro.
+
+When you run group sex, you need to fill out the timers and gm response. The timers are in milliseconds. Im too
+lazy to list all the timers for spells, however:
+Your special attack delay is how long it takes to make en entire swing with the weapon you have in milliseconds.
+With daggers it is short, with polearm it is long. (200-800)
+VMware slowdown should always be 150 if your arent lagging, if you are lagging, using vmware or your comptuer sucks
+make it it bit higher.
+In order to start the macro you will need to select yes or no with auto equip armor.
+
+You need your paperdoll out in order for the auto equip armor to work.
+
+Now to get it running you need to have full health full mana and full stam. Your target needs to have full health
+also (however you can get healthbars off buildings and such). If the macro gets stuck looking for the
+targets health bar position, wiggle your mouse around on the target without loosing the health bar on your
+screen, play with it a bit... it will work. Thats the only kind of buggy thing about the macro.
+
+Delete is pause - when you pause you can go anywhere and come back unpause with delete again and resume the macro.
+End is exit the macro.
+It runs in windowed mode better than any other mode.
+
+Im sure theres more to put here but I cant think of it.
+
+=============================================================================================================
+
+
+For rapid magic:
+
+Rapid magic casts 1 to 5 spells, refils health, mana and stam and automatically re equipps broken staffs.
+It is very easy to use:
+Spells go on slots 1-5
+staff is slot 6
+Health to mana 7
+Mana to stam 8
+Stam to health 9
+
+Run when you have full health mana and stam!
+
+=============================================================================================================
+
+For Hivekin Queen Script:
+
+Start it on a full hp bar.
+
+Use SLOT ZERO "0" as heal other OR sacrafice.

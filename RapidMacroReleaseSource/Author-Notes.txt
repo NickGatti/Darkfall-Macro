@@ -1,0 +1,9 @@
+Author: Diminished Hail
+Previous version of Rapid Melee.
+Note: Break OP did not write these macros. Xzyzz did not make the macro that has been passed around on EU, he got that code from me and
+took credit for it himself. This is the freshest verions of my macros and is now being passed out to
+the public. I am no longer giving the source code out.
+
+The newest version of group sex will allow the use of seige hammers and a seperate key for health to mana.
+Rapid magic is a script that refills health/mana/stam and re-equips staffs while you macro magic.
+Rapid magic has been working flawlessly for quite some time, and is very useful.

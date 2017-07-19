@@ -1,0 +1,100 @@
+; ----------------------------------------------------------------------------
+; Sample script for DFInput by clockwork / 0x33.org
+; ----------------------------------------------------------------------------
+#NoEnv ; Recommended for performance and compatibility with future AutoHotkey releases.
+SendMode Input ; Recommended for new scripts due to its superior speed and reliability.
+#Persistent ; Keep the script running even after auto run section is completed
+#SingleInstance force ; Replace running script with new one automatically
+#MaxThreads 1 
+
+	SetKeyDelay, 100, 100 
+	SinkWindowName := "Darkfall Tools" 
+	SinkControlName := "msctls_hotkey321"	
+
+; ----------------------------------------------------------------------------
+
+Pause ; Script starts paused
+
+]::Reload ; Restart the script
+
+[:: ; Start the script
+
+Pause off
+
+; ----------------------------------------------------------------------------
+
+; TODO: Make the script do something. There as an example loop below:
+	
+	;ControlSend, Edit1, {Alt down}f{Alt up}, Untitled - Notepad
+	;ControlSend, %SinkControlName%, {Alt down}c{Alt up}, %SinkWindowName%
+	;SendKey("{Alt down}c{Alt up}")
+	;return
+	
+Loop 
+{	
+	
+	; Select staff, the 500ms delay is necesarry to make sure client finishes actions
+	SendKeyAndWait(1, 500) ; 
+
+	; Select spell
+	SendKeyAndWait(2, 500)
+	
+	; Click to do spell and wait 2 seconds for the spell cast time
+	SendClickAndWait(2000)
+
+	; Select melee weapon
+	SendKeyAndWait(3, 500)
+	
+	; Parry for 4 seconds, note everything except numbers sould be in enclosed quotes
+	HoldKeyDown("v", 4000)	
+}
+
+return
+
+; ----------------------------------------------------------------------------
+
+; Helper function to hold a key down for an amount of time
+HoldKeyDown(key, timeToWaitInMs)
+{
+	keyDown := % key . " down"
+	keyUp := % key . " up"
+	
+	SendKey(keyDown)
+	Sleep, timeToWaitInMs
+	SendKey(keyUp)
+}
+
+; Helper function to send a key press and wait
+SendKeyAndWait(key, timeToWaitInMs)
+{
+	global			
+	ControlSend, %SinkControlName%, {%key%}, %SinkWindowName%
+	Sleep, timeToWaitInMs
+}
+
+; Helper function to send a key press
+SendKey(key)
+{
+	global			
+	ControlSend, %SinkControlName%, {%key%}, %SinkWindowName%
+}
+
+; ----------------------------------------------------------------------------
+
+; Helper function to send a click and wait
+SendClickAndWait(timeToWaitInMs)
+{
+	global
+	SendClick()
+	Sleep, timeToWaitInMs
+}
+
+; Helper function to send a click
+SendClick()
+{
+	global
+	SetControlDelay 100
+	ControlClick, %SinkControlName%, %SinkWindowName%,,,, NA
+}
+
+; ----------------------------------------------------------------------------
